@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Love Question</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+              .oswald {
+        font-family: "Oswald", sans-serif;
+      }
+                  }
+    </style>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-pink-100">
+    <div id="main-body" class="text-center">
+      <div class="mb-4 p-4" id="question">
+        <h1 class="oswald text-4xl font-bold">
+          Do you love me? <span>😔</span>
+        </h1>
+      </div>
+      <button
+        id="yesButton"
+        class="px-6 py-2 text-lg mr-4 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
+      >
+        Yes
+      </button>
+      <button
+        id="noButton"
+        class="px-6 py-2 text-lg font-semibold text-white bg-red-500 rounded hover:bg-red-600"
+      >
+        No
+      </button>
+    </div>
+    <div
+      id="myModal"
+      class="flex-col shadow-md bg-white hidden p-10 rounded-md mt-4 text-center mx-auto"
+    >
+      <h2 class="text-2xl text-red-600 font-bold">
+        I love you too <span>😘</span>
+      </h2>
+      <div>
+        <button
+          id="closeModal"
+          class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-600"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <div id="after-close" class="hidden mx-auto">
+      <h2 class="text-7xl"><span>🥰</span></h2>
+    </div>
+    <script src="./love.js"></script>
+  </body>
+</html>
